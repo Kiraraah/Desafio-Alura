@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta z="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <title>Decodificador de Textos</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="assets/Frame 6.png" alt="logo alura">
+    </header>
+    <main>
+        <section>
+            <textarea class="text-area" cols="41" rows="4" placeholder="Digite seu texto"></textarea>
+            <div class="info">
+                <img class="exclamacao" src="assets/bi_exclamation-circle-fill.png" alt="ponto de exclamação">
+                <h6 class="mensagemInfo">Apenas letras minúsculas e sem acento.</h6>
+            </div>
+            <div class="bot">
+                <button class="b1" onclick="esconderCrip">Criptografar</button>
+                <button class="b2" onclick="esconderDes">Descriptografar</button>
+            </div>
+        </section>
+        <section>
+            <div class="mensagem-container">
+                <textarea class="mensagem"></textarea>
+                <div>
+                    <p class="mensagemSaida">Nenhuma mensagem encontrada.</p>
+                    <p class="mensagemSaida1">Digite um texto que você deseja <br>criptografar ou descriptografar.
+                    </p>
+                </div>
+                <button class="copiar" id="bCopiar" onclick="cop">Copiar</button>
+            </div>
+
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por Leislane Leonardo, 2024.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
